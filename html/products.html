@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Product Management</title>
+    <link rel="stylesheet" href="../css/dashboard.css"> 
+    <link rel="stylesheet" href="../css/products.css"> 
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="logo-text">DashboardApp</span> 
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item" title="Dashboard">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="products.html" class="nav-item active" title="Products">
+                    <span class="nav-icon">📦</span> 
+                    <span class="nav-text">Products</span>
+                </a>
+                <a href="#" class="nav-item" title="Sales">
+                    <span class="nav-icon">📈</span> 
+                    <span class="nav-text">Sales</span>
+                </a>
+                <a href="#" class="nav-item" title="Reports">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Reports</span>
+                </a>
+                <a href="#" class="nav-item" title="Settings">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item logout" title="Logout">
+                    <span class="nav-icon">➡️</span>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1 class="page-title">List Data Product</h1>
+            
+            <!-- Product Table Container -->
+            <div class="table-container">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody">
+                        <!-- Data akan diisi oleh JavaScript -->
+                    </tbody>
+                    </table>
+                </div>
+                
+                <p class="no-products" style="display: none;">No products found.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/product.js"></script>
+    </body>
+</html>

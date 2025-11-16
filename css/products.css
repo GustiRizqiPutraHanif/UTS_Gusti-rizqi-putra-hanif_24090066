@@ -1,0 +1,86 @@
+/* Menggunakan file dashboard.css untuk layout dasar (sidebar/main-content) */
+
+/* TABLE STYLES */
+.content-area {
+    /* Menyesuaikan style dari dashboard.css jika perlu */
+    padding: 20px;
+}
+
+.table-container {
+    overflow-x: auto; /* Memungkinkan scroll horizontal jika tabel terlalu lebar */
+    margin-top: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.product-table th, 
+.product-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.product-table th {
+    background-color: #f8f9fa; /* Warna latar belakang header yang ringan */
+    color: #4A69F0; /* Biru konsisten dengan dashboard */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.product-table tbody tr:hover {
+    background-color: #f2f5ff; /* Hover effect */
+}
+
+/* BUTTON STYLES (Konsisten dengan warna biru) */
+
+.btn-primary {
+    background-color: #4A69F0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #3b52c0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-action {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s, border-color 0.2s;
+    line-height: 1; /* Agar emoji rata tengah */
+}
+
+.btn-action:hover {
+    border-color: #4A69F0;
+    background-color: #f2f5ff;
+}
+
+.btn-edit {
+    color: #2196F3; /* Biru muda untuk edit */
+}
+
+.btn-delete {
+    color: #F44336; /* Merah untuk delete */
+}

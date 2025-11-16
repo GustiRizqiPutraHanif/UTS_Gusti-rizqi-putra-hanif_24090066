@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css"> 
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="logo-text">DashboardApp</span> 
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active" title="Dashboard">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="products.html" class="nav-item" title="Products">
+                    <span class="nav-icon">📦</span> 
+                    <span class="nav-text">Products</span>
+                </a>
+                <a href="#" class="nav-item" title="Sales">
+                    <span class="nav-icon">📈</span> 
+                    <span class="nav-text">Sales</span>
+                </a>
+                <a href="#" class="nav-item" title="Reports">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Reports</span>
+                </a>
+                <a href="#" class="nav-item" title="Settings">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item logout" title="Logout">
+                    <span class="nav-icon">➡️</span>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1 class="page-title">Dashboard Overview</h1>
+                <div class="user-profile">
+                    <span class="user-name">John Doe</span>
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                </div>
+            </header>
+            
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="card-icon">📦</div> 
+                    <h3 class="card-title">Total Products</h3>
+                    <p class="card-value" id="totalProducts">1,234</p>
+                </div>
+                
+                <div class="summary-card">
+                    <div class="card-icon">📈</div> 
+                    <h3 class="card-title">Total Sales</h3>
+                    <p class="card-value" id="totalSales">567</p>
+                </div>
+                
+                <div class="summary-card">
+                    <div class="card-icon">💰</div> 
+                    <h3 class="card-title">Total Revenue</h3>
+                    <p class="card-value" id="totalRevenue">$12,345.67</p>
+                </div>
+
+                <div class="summary-card">
+                    <div class="card-icon">👤</div> 
+                    <h3 class="card-title">New Users</h3>
+                    <p class="card-value" id="newUsers">89</p>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <p>No recent activity to display.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <link rel="stylesheet" href="../js/dashboard.js"> 
+</body>
+</html>

@@ -1,0 +1,258 @@
+/* RESET/BASE STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ganti dengan font yang lebih sesuai jika ada */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Warna latar belakang halaman */
+}
+
+/* MAIN CONTAINER */
+.login-container {
+    display: flex;
+    width: 800px; /* Lebar total container */
+    height: 500px; /* Tinggi container */
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Penting untuk menjaga sudut yang membulat */
+}
+
+/* LEFT SECTION - ILLUSTRATION */
+.illustration-section {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* Ganti dengan gambar ilustrasi dari file Anda jika bukan img tag */
+    /* Untuk menempatkan gambar di background CSS, gunakan: */
+    /* background-image: url('path/ke/gambar/anda.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: contain; */
+}
+
+/* Jika Anda menggunakan tag <img> di HTML asli, gunakan ini: */
+/*
+.illustration-img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+*/
+
+/* Anda dapat menggunakan tag <img> di HTML dan CSS ini untuk mendapatkan hasil yang lebih mudah: */
+.illustration-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* RIGHT SECTION - LOGIN FORM */
+.login-section {
+    flex: 1;
+    background-color: #4A69F0; /* Warna biru utama dari gambar */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* HEADER/TITLE STYLES */
+.welcome-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.signup-prompt {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+}
+
+.signup-link-top {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.signup-link-top:hover {
+    text-decoration: none;
+}
+
+/* FORM STYLES */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Efek fokus putih */
+}
+
+/* CHECKBOX & FORGOT PASSWORD */
+.options-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    accent-color: white; /* Mengubah warna checkbox */
+}
+
+.forgot-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    background-color: #6C8CF0; /* Warna tombol sedikit lebih terang dari background */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+    background-color: #7999f8;
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+}
+
+/* Separator */
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.separator-line {
+    flex: 1;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.separator-text {
+    padding: 0 16px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    border-color: #000;
+    background-color: #f8f9fa;
+}
+
+.social-icon {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.google-btn .social-icon {
+    color: #4285F4;
+}
+
+.facebook-btn .social-icon {
+    color: #1877F2;
+}
+
+/* MEDIA QUERIES (untuk responsif) */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .illustration-section {
+        display: none; /* Sembunyikan ilustrasi di layar kecil */
+    }
+    .login-section {
+        padding: 40px 20px;
+    }
+}
